@@ -1,0 +1,34 @@
+{
+  "full": {
+    "testModules": [
+      "./elementsCounter",
+      "./logs",
+      "./network"
+    ],
+    "timeToWait": 10000
+  },
+  "sanity": {
+    "testModules": [
+      "./elementsCounter"
+    ],
+    "timeToWait": 4000
+  },
+  "elementsCounter": {
+    "testModules": [
+      "./elementsCounter"
+    ],
+    "timeToWait": 4000
+  },
+  "network": {
+    "testModules": [
+      "./network"
+    ],
+    "timeToWait": 10000
+  },
+  "logs": {
+    "testModules": [
+      "./logs"
+    ],
+    "timeToWait": 10000
+  }
+}
