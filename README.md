@@ -8,6 +8,9 @@ Notes:
 2. The log tests currently run just on browserstack platform (you can try to solve the issue yourself).
 3. The proxy is here for the network tests, if you are not testing your network data, you can remove the proxy.
 4. When using browserstack, you will need to run this project form webserver that will be your proxy, and set the ip and port acordenly.
+5. If you want to run on local browser, use the local_chrome and etc. You will need to install those globally
+    $ sudo npm install geckodriver -g
+    $ sudo npm install chromedriver -g
 
 I hope the above is useful to you,
 If you require any further information, feel free to contact me.
