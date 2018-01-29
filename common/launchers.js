@@ -335,7 +335,7 @@ const customLaunchers = {
     },
     local_safari : {
         'browserName' : 'safari'
-    },
+    }
 };
 
 const getLauncher = (name) => customLaunchers[name];
