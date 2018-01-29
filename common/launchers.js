@@ -325,7 +325,17 @@ const customLaunchers = {
         'browserName' : 'android',
         'platform'    : 'ANDROID',
         'device'      : 'Amazon Kindle Fire 2'
-    }
+    },
+    /////////////////////
+    local_chrome : {
+        'browserName' : 'chrome'
+    },
+    local_firefox : {
+        'browserName' : 'firefox'
+    },
+    local_safari : {
+        'browserName' : 'safari'
+    },
 };
 
 const getLauncher = (name) => customLaunchers[name];
