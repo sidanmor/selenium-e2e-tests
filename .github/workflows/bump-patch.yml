@@ -25,10 +25,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Run npm version patch --force
-        run: npm version patch --force
-
-      # Runs a single command using the runners shell
-      - name: Run git push
-        run: git push
+      # Runs a set of commands using the runners shell
+      - name: Bump Version
+        run: |
+          git config --global user.email "sidanmor@gmail.com"
+          git config --global user.name "sidanmor"
+          npm version patch --force
+          git push
