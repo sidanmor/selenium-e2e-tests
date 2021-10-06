@@ -1,6 +1,6 @@
 {
   "name": "selenium-e2e-tests",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "End to End tests using Selenium Webdriver",
   "main": "./e2e/start.js",
   "scripts": {
