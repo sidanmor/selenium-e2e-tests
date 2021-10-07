@@ -33,6 +33,7 @@ jobs:
           npm version patch --force
           echo "1"
           echo ${{ github.event.pull_request.head }}
-          echo ${{ github.event.pull_request.head.sha }}
           echo "2"
+          echo ${{ github.event.pull_request.head.sha }}
+          echo "3"
           git push
