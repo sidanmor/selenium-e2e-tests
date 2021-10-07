@@ -31,4 +31,4 @@ jobs:
           git config --global user.email "sidanmor@gmail.com"
           git config --global user.name "sidanmor"
           npm version patch --force
-          git push origin HEAD ${{ github.event.pull_request.head.sha }}
+          git push
