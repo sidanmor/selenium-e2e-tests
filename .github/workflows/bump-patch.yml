@@ -23,13 +23,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.event.pull_request.head.ref }}
 
       # Runs a set of commands using the runners shell
       - name: Bump Version
         run: |
           git config --global user.email "sidanmor@gmail.com"
           git config --global user.name "sidanmor"
-          git checkout ${{ github.event.pull_request.head.ref }}
           npm version patch --force
           git push
