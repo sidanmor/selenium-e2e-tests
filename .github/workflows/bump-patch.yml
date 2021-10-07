@@ -31,5 +31,7 @@ jobs:
           git config --global user.email "sidanmor@gmail.com"
           git config --global user.name "sidanmor"
           npm version patch --force
+          echo "1"
           echo ${{ github.event.pull_request.repository }}
+          echo "2"
           git push
