@@ -32,7 +32,7 @@ jobs:
           git config --global user.name "sidanmor"
           npm version patch --force
           echo "1"
-          echo ${{ github.event.pull_request.head }}
+          echo ${{ github.event.pull_request.head.ref }}
           echo "2"
           echo ${{ github.event.pull_request.head.sha }}
           echo "3"
