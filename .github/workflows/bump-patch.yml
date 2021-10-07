@@ -30,5 +30,5 @@ jobs:
           git config --global user.name "sidanmor"
           npm version patch --force
           echo "111"
-          echo ${{ github.event.pull_request.head.sha }}
+          echo ${{ github.event.pull_request.head.branch }}
           git push
