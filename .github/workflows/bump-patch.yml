@@ -31,4 +31,5 @@ jobs:
           git config --global user.email "sidanmor@gmail.com"
           git config --global user.name "sidanmor"
           npm version patch --force
+          echo "build"
           git push
