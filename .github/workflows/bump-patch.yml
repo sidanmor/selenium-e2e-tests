@@ -31,5 +31,6 @@ jobs:
           git config --global user.email "sidanmor@gmail.com"
           git config --global user.name "sidanmor"
           git checkout ${{ github.event.pull_request.head.ref }}
+          echo ${{ github.event.pull_request.head.ref }}
           npm version patch --force
           git push
